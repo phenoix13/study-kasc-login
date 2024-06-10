@@ -13,17 +13,22 @@ body{
     height: 100vh;
     width: 100vw;
     background-attachment: fixed;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-    background-size: 400% 400%;
-    animation: aniback 2s linear infinite;
     display: flex;
     justify-content: center;
-    align-items:end
+    align-items:end;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    background-size: 400% 400%;
+    animation: aniback 3s linear infinite;
+
 }
 @keyframes aniback {
     0%{
         background-position: 0%;
     }
+    20%{
+        background-position: 50%;
+    }
+
     50%{
         background-position: 100%;
     }
@@ -34,10 +39,27 @@ body{
 .center{    
     margin: auto;
     margin-bottom: 20%;
-    background-color:aqua ;
-    opacity: 0.2;
+    background-image: linear-gradient(to right bottom, #78124c, #752561, #6e3674, #644485,
+    #565292, #435c9a, #2e669e, #136e9f, #00769a, #007c92, #258189, #3f8580);    
+     color: transparent;
+    background-clip:text ;
     width: 30em;
-    
+    background-size: 300% 300%;
+    animation: name 1s linear infinite ;
+}
+@keyframes name {
+    0%{
+        background-position: 0%;
+    }
+    20%{
+        background-position: 60%;
+    }
+    50%{
+        background-position: 80%;
+    }
+    100%{
+        background-position: 0%;
+    }
 }
 .word{
     padding: 2%;
@@ -58,16 +80,19 @@ body{
     text-align: center;
     font-size: 1.5em;
     padding: 1%;
-
 }
 .word h4 a{
     text-decoration: none;
-    color: black;
+    padding: 10px;
+    transition-property: var(font-size,opacity);
+    transition: 0.1s linear 0s;
 }
 .word h4 a:hover{
-    background-color:white;
-    color: black;
-    border-radius: 40%;
+    background-color: #007c92;
+    color: white;
+    font-size: xx-large;
+    opacity: 0.5;
+    border-radius: 50%;
 }
     </style>
 </head>
