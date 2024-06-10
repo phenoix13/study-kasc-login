@@ -12,6 +12,7 @@
 body{
     height: 100vh;
     width: 100vw;
+    background-attachment: fixed;
     background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     background-size: 400% 400%;
     animation: aniback 2s linear infinite;
@@ -31,26 +32,35 @@ body{
     }
 }
 .center{    
-    margin-bottom: 17%;
-    background-color:aqua;
-    width: 80%;
+    margin: auto;
+    margin-bottom: 20%;
+    background-color:aqua ;
+    opacity: 0.2;
+    width: 30em;
+    
 }
 .word{
-    text-align: center;
     padding: 2%;
 }
 .word h3{
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 .word h2{
-    font-size: 2em;
+    font-size: 2.5em;
     padding: 3%;
+    padding-left: 8px;
+    text-align:center;
 }
-.word h4 a{
+.word h4{
+    text-align: center;
     font-size: 1.5em;
     padding: 1%;
+
+}
+.word h4 a{
     text-decoration: none;
     color: black;
 }
@@ -66,7 +76,7 @@ body{
         <div class="word">
         <h3>WELCOME TO</h3>
         <h2>DARK PHOENIX</h2>
-        <h4><a href="#">Let,s Go</a></h4>
+        <h4><a href="#" title="click me">Let,s Go</a></h4>
         </div>
     </div>
 </body>
